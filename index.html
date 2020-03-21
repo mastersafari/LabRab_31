@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="stylesheet.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <title>LabRab_31</title>
+</head>
+<body>
+<header>
+    <p class="info left"> Сафаров А.А. P3201</p>
+    <p class="info right">Вариант 201016 </p>
+
+</header>
+
+<section>
+
+    <div class="content-container container">
+        <img class=areas-pic src="areas.png">
+       <!---->
+        <form method="GET" action="check.php" target="graphics">
+            <div class="control-points block region">
+                <div id="xInput">
+                    <p class="title"><label title="X"> Значение X </label></p>
+                    <table class="main">
+                        <tr>
+                            <td><input type="radio" name="x" value="-2.0" id="-2.0">-2</td>
+                            <td><input type="radio" name="x" value="-1.5" id="-1.5">-1.5</td>
+                            <td><input type="radio" name="x" value="-1.0" id="-1.0">-1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="x" value="-0.5" id="-0.5">-0.5</td>
+                            <td><input type="radio" name="x" value="0.0" id="0.0">0</td>
+                            <td><input type="radio" name="x" value="0.5" id="0.5">0.5</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="x" value="1.0" id="1.0">1</td>
+                            <td><input type="radio" name="x" value="1.5" id="1.5">1.5</td>
+                            <td><input type="radio" name="x" value="2.0" id="2.0">2</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div >
+                    <p class="title"><label for="Y"> Значение Y </label></p>
+                    <p><input class="input_Y" id="y" type="text" name="y" placeholder="(-5 .. 3)"><br></p>
+                </div>
+
+                <div >
+                    <p class="title"><label for="R"> Значение R </label></p>
+                    <p><input class="input_R" id="r" type="text" name="r" placeholder="(1 .. 4)"><br></p>
+                </div>
+
+                <div class="block invisible" id="errors-area">
+
+                </div>
+
+            </div>
+            <button  type="submit" id="submit-button">PROVERKA</button>
+
+           <!--  -->
+
+        </form>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+
+<!--  -->
+
+<footer >
+    <p class="info left">
+            ИТМО - Санкт-Петербург - 2020
+    </p>
+    <p class="info right">
+
+
+    </p>
+
+
+</footer>
+
+</body>
+</html>

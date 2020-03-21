@@ -1,0 +1,183 @@
+При работе с CSS должно быть продемонстрировано использование селекторов элементов, 
+селекторов идентификаторов, селекторов атрибутов, селекторов псевдоэлементов 
+а также такие свойства стилей CSS, как наследование и каскадирование.
+
+
+body {
+    margin: 0;
+    font-size: 1.5rem;
+    background-color: white;
+    color: #000;
+    font-family: "Courier New", "Nimbus Mono L" , monospace;
+}
+
+.areas-pic {
+    width: 656px;
+    height: 500px;
+    /*margin: 10em*/
+}
+
+p::first-letter {
+    color: #704040;
+}
+
+header p::first-letter {
+    color: black;
+}
+
+.container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header{
+    font-family: fantasy;
+    font-size: 20px;
+    color: #330000;
+    background-color: #C400AB;
+    background-size: 50px 50px;
+    background-image:
+            background: rgb(135,30,154);
+        background: linear-gradient(to bottom, rgba(135,30,154,1) 0%,rgba(175,42,216,1) 50%,rgba(165,32,202,1) 51%,rgba(206,126,232,1) 100%);
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.info {
+    float: left;
+    width: 50%;
+}
+ 
+
+.right {
+    text-align: right;
+}
+
+/*основное*/
+section {
+    font-family: "Courier New", "Nimbus Mono L" , monospace;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+.control-points {
+    background-color: #fcf6f6;
+    margin-top: 10px;
+    border: 1px outset #d6d6b1;
+    border-radius: 5px;
+}
+
+.content-container {
+    display: flex;
+    padding-top: 100px;
+    flex-direction: row-reverse;
+}
+
+.block{
+    background: radial-gradient(circle, white, #DDD7D7);
+    margin: 15px;
+    padding: 10px;
+    width: auto;
+    align-items: center;
+    box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+button{
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    font-size: large;
+    margin: 2rem;
+}
+
+button:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+}
+
+button:active {
+    background: rgb(240, 240, 240);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .4);
+}
+
+[type="submit"] {
+    color: green;
+    border-radius: 10px;
+    border: 1px outset #999975;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+#xInput{
+    height: 250px;
+}
+
+#yInput, #radiusInput {
+    background: radial-gradient(ellipse, white, #DDD7D7);
+}
+
+/*
+*/
+
+input {
+    padding: 1.5%;
+    margin: 0.1%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    float: right;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: black;
+    padding: 5px 10px;
+}
+
+table.main {
+    text-align: left;
+    border-collapse: collapse;
+    border: 2px solid transparent;
+}
+
+table.main>th, td {
+    border: 2px solid transparent;
+}
+
+.invisible {
+    display: none;
+}
+
+#responsesTable td, th{
+    border: 2px solid #9b9b7d;
+}
+
+
+@media (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+
+/*   
+    */
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 550px;
+    }
+
+    /**/
+}
