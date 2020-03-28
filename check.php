@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
 <?php
 
 if (session_id()==="") session_start();
@@ -115,7 +116,10 @@ class Response{
     }
 }
 ?>
+
 <!--  -->
+
+<button  type="submit" id="submit-button" onClick='location.href="https://se.ifmo.ru/~s278528/index.html"'>Ввести еще</button>
 
 
 

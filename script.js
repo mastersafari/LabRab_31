@@ -21,6 +21,7 @@
                 errorsArea.classList.remove("invisible");
             else
                 errorsArea.classList.add("invisible");
+                
 
             errorsText = "";
         }

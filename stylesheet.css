@@ -3,6 +3,7 @@
 а также такие свойства стилей CSS, как наследование и каскадирование.
 
 
+
 body {
     margin: 0;
     font-size: 1.5rem;
@@ -48,6 +49,7 @@ header{
 
 footer {
     margin-top: 20px;
+    font-family: "Courier New", "Nimbus Mono L" , monospace;
 }
 
 .info {
